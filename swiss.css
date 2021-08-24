@@ -1,0 +1,20 @@
+.scoreDisplay {
+    display: grid;
+    grid-template-columns: 120px 25px 25px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+#temp {
+    display: none;
+}
+#swissEntry
+{
+    width: 115px;
+    margin-bottom: 20px;
+}
+#submitName {
+    width: 55px;
+}
+.deleteButton {
+    text-indent: -2px;
+}
