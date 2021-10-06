@@ -1,36 +1,36 @@
-p1score.addEventListener("keyup",scorem1);
-p2score.addEventListener("keyup",scorem1);
-p3score.addEventListener("keyup",scorem2);
-p4score.addEventListener("keyup",scorem2);
-p5score.addEventListener("keyup",scorem3);
-p6score.addEventListener("keyup",scorem3);
-p7score.addEventListener("keyup",scorem4);
-p8score.addEventListener("keyup",scorem4);
-w12score.addEventListener("keyup",scorem5);
-w34score.addEventListener("keyup",scorem5);
-w56score.addEventListener("keyup",scorem6);
-w78score.addEventListener("keyup",scorem6);
-w1234score.addEventListener("keyup",scorem7);
-w5678score.addEventListener("keyup",scorem7);
-playerEntry.addEventListener("keyup",arrayConstruction);
-//playerEntry.addEventListener("keyup",playerLookup); 
-var player1name;
-var player1round;
-var player2name;
-var player2round;
-var player3name;
-var player3round;
-var player4name;
-var player4round;
-var player5name;
-var player5round;
-var player6name;
-var player6round;
-var player7name;
-var player7round;
-var player8name;
-var player8round;
-var roundArray = [];
+p1score.addEventListener("keyup",scorem1)
+p2score.addEventListener("keyup",scorem1)
+p3score.addEventListener("keyup",scorem2)
+p4score.addEventListener("keyup",scorem2)
+p5score.addEventListener("keyup",scorem3)
+p6score.addEventListener("keyup",scorem3)
+p7score.addEventListener("keyup",scorem4)
+p8score.addEventListener("keyup",scorem4)
+w12score.addEventListener("keyup",scorem5)
+w34score.addEventListener("keyup",scorem5)
+w56score.addEventListener("keyup",scorem6)
+w78score.addEventListener("keyup",scorem6)
+w1234score.addEventListener("keyup",scorem7)
+w5678score.addEventListener("keyup",scorem7)
+playerEntry.addEventListener("keyup",arrayConstruction)
+//playerEntry.addEventListener("keyup",playerLookup) 
+let player1name
+let player1round
+let player2name
+let player2round
+let player3name
+let player3round
+let player4name
+let player4round
+let player5name
+let player5round
+let player6name
+let player6round
+let player7name
+let player7round
+let player8name
+let player8round
+let roundArray = []
 
 function scorem1(){
 if(p1score.value!=="" && p2score.value!=="") {
@@ -134,45 +134,31 @@ if(w1234score.value!=="" && w5678score.value!=="") {
                                             }
 
 function arrayConstruction(){
-    roundArray = [];
-    roundArray.push([document.getElementById("firstplace").value, document.getElementById("firstplace").className]);
-    roundArray.push([document.getElementById("w1234name").value, document.getElementById("w1234name").className]);
-    roundArray.push([document.getElementById("w5678name").value, document.getElementById("w5678name").className]);
-    roundArray.push([document.getElementById("w12name").value, document.getElementById("w12name").className]);
-    roundArray.push([document.getElementById("w34name").value, document.getElementById("w34name").className]);
-    roundArray.push([document.getElementById("w56name").value, document.getElementById("w56name").className]);
-    roundArray.push([document.getElementById("w78name").value, document.getElementById("w78name").className]);
-    roundArray.push([document.getElementById("p1name").value, document.getElementById("p1name").className]);
-    roundArray.push([document.getElementById("p2name").value, document.getElementById("p2name").className]);
-    roundArray.push([document.getElementById("p3name").value, document.getElementById("p3name").className]);
-    roundArray.push([document.getElementById("p4name").value, document.getElementById("p4name").className]);
-    roundArray.push([document.getElementById("p5name").value, document.getElementById("p5name").className]);
-    roundArray.push([document.getElementById("p6name").value, document.getElementById("p6name").className]);
-    roundArray.push([document.getElementById("p7name").value, document.getElementById("p7name").className]);
-    roundArray.push([document.getElementById("p8name").value, document.getElementById("p8name").className]);
+    roundArray = []
+    roundArray.push([document.getElementById("firstplace").value, document.getElementById("firstplace").className])
+    roundArray.push([document.getElementById("w1234name").value, document.getElementById("w1234name").className])
+    roundArray.push([document.getElementById("w5678name").value, document.getElementById("w5678name").className])
+    roundArray.push([document.getElementById("w12name").value, document.getElementById("w12name").className])
+    roundArray.push([document.getElementById("w34name").value, document.getElementById("w34name").className])
+    roundArray.push([document.getElementById("w56name").value, document.getElementById("w56name").className])
+    roundArray.push([document.getElementById("w78name").value, document.getElementById("w78name").className])
+    roundArray.push([document.getElementById("p1name").value, document.getElementById("p1name").className])
+    roundArray.push([document.getElementById("p2name").value, document.getElementById("p2name").className])
+    roundArray.push([document.getElementById("p3name").value, document.getElementById("p3name").className])
+    roundArray.push([document.getElementById("p4name").value, document.getElementById("p4name").className])
+    roundArray.push([document.getElementById("p5name").value, document.getElementById("p5name").className])
+    roundArray.push([document.getElementById("p6name").value, document.getElementById("p6name").className])
+    roundArray.push([document.getElementById("p7name").value, document.getElementById("p7name").className])
+    roundArray.push([document.getElementById("p8name").value, document.getElementById("p8name").className])
 
-    //var temp = roundArray[0][0];
-    for (var i = 0; i < 15; i++) {
+    //let temp = roundArray[0][0]
+    for (let i = 0; i < 15; i++) {
         if(roundArray[i][0] == playerEntry.value){
         lastround.value = roundArray[i][1]
-        break;
+        break
         }
             else {
             lastround.value = "Not Found"
             }
     }
 }
-
-
-
-    
-    
-    
- 
- /* function isCherries(fruit) {
-        return fruit.name === 'cherries';
-      }
-      
-      console.log(inventory.find(isCherries));
-     { name: 'cherries', quantity: 5 }
-     */
