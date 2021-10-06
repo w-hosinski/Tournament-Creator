@@ -10,6 +10,11 @@ deletePlayer1.addEventListener("click",function(){deletePlayer(1)},false)
 deletePlayer2.addEventListener("click",function(){deletePlayer(2)},false)
 deletePlayer3.addEventListener("click",function(){deletePlayer(3)},false)
 deletePlayer4.addEventListener("click",function(){deletePlayer(4)},false)
+deletePlayer5.addEventListener("click",function(){deletePlayer(5)},false)
+deletePlayer6.addEventListener("click",function(){deletePlayer(6)},false)
+deletePlayer7.addEventListener("click",function(){deletePlayer(7)},false)
+deletePlayer8.addEventListener("click",function(){deletePlayer(8)},false)
+createPairingsButton.addEventListener("click", createParings)
 
 function pushEntry() {
     if(swissEntry.value != 0) {
@@ -27,42 +32,23 @@ function updateNames(){
     playerScore3.value = ""
     playerName4.value = ""
     playerScore4.value = ""
-    for(let i=0; i<4; i++) {
+    playerName5.value = ""
+    playerScore5.value = ""
+    playerName6.value = ""
+    playerScore6.value = ""
+    playerName7.value = ""
+    playerScore7.value = ""
+    playerName8.value = ""
+    playerScore8.value = ""
+    for(let i=0; i<8; i++) {
         if (typeof swissNames[i] !== 'undefined') {
             document.getElementById(`playerName${i+1}`).value = swissNames[i][0] 
             document.getElementById(`playerScore${i+1}`).value = swissNames[i][1]
         }
     }
-   /*
-    if (typeof swissNames[0] !== 'undefined') {
-        playerName1.value = swissNames[0][0]
-        playerScore1.value = swissNames[0][1]
-    }
-    if (typeof swissNames[1] !== 'undefined') {
-        playerName2.value = swissNames[1][0]
-        playerScore2.value = swissNames[1][1]
-    }
-    if (typeof swissNames[2] !== 'undefined') {
-        playerName3.value = swissNames[2][0]
-        playerScore3.value = swissNames[2][1]
-    }
-    if (typeof swissNames[3] !== 'undefined') {
-        playerName4.value = swissNames[3][0]
-        playerScore4.value = swissNames[3][1]
-    }
-    */
     swissEntry.value = ""
     }
 
-
-
-/*
-function shuffleArray(array) {
-    for (let i = array.length - 1 i > 0 i--) {
-        const j = Math.floor(Math.random() * (i + 1))
-        [array[i], array[j]] = [array[j], array[i]]
-    }
+function createParings() {
+        console.log(swissNames)
 }
-*/
-
-//newInv.sort((a, b) => a[1].localeCompare(b[1]))
