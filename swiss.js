@@ -1,15 +1,15 @@
 let swissNames = []
 
-const deletePlayer = pos => {
-    swissNames.splice(pos-1,1)
+const deletePlayer = num => {
+    swissNames.splice(num-1, 1)
     updateNames()
 }
 
 submitName.addEventListener("click",pushEntry)
-deletePlayer1.addEventListener("click",deletePlayer)
-deletePlayer2.addEventListener("click",deletePlayer)
-deletePlayer3.addEventListener("click",deletePlayer)
-deletePlayer4.addEventListener("click",deletePlayer)
+deletePlayer1.addEventListener("click",function(){deletePlayer(1)},false)
+deletePlayer2.addEventListener("click",function(){deletePlayer(2)},false)
+deletePlayer3.addEventListener("click",function(){deletePlayer(3)},false)
+deletePlayer4.addEventListener("click",function(){deletePlayer(4)},false)
 
 function pushEntry() {
     if(swissEntry.value != 0) {
@@ -27,6 +27,13 @@ function updateNames(){
     playerScore3.value = ""
     playerName4.value = ""
     playerScore4.value = ""
+    for(let i=0; i<4; i++) {
+        if (typeof swissNames[i] !== 'undefined') {
+            document.getElementById(`playerName${i+1}`).value = swissNames[i][0] 
+            document.getElementById(`playerScore${i+1}`).value = swissNames[i][1]
+        }
+    }
+   /*
     if (typeof swissNames[0] !== 'undefined') {
         playerName1.value = swissNames[0][0]
         playerScore1.value = swissNames[0][1]
@@ -43,8 +50,9 @@ function updateNames(){
         playerName4.value = swissNames[3][0]
         playerScore4.value = swissNames[3][1]
     }
+    */
     swissEntry.value = ""
-}
+    }
 
 
 
