@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="swiss.css">
 </head>
 <body>
+    <div id=container>
     <a href="index.html">Elimination Tournament</a></p>
     <input type="text" placeholder="Enter Player Name" id="swissEntry">
     <input type="button" id="submitName" value="Entry">
@@ -39,9 +40,31 @@
         <input type="text"  id="playerScore8" class="player8" readonly>
         <input type="button" id="deletePlayer8" class="deleteButton player8" value="X">
     </div><br>
-    <input type="button" id="createPairingsButton" value="Create Pairings">
-
-    
+    <input type="button" id="createPairingsButton" value="Update Scores and Create New Pairings">
+    <input type="button" id="firstPairingsButton" value="Create Initial Pairings"><br><br>
+    <div id="swissPairings">
+        <label for="psName1">Match 1</label><br>
+        <input type="text" id="psName1">
+        <input type="text" id="psScore1">
+        <input type="text" id="psName2">
+        <input type="text" id="psScore2">
+        <label for="psName3">Match 2</label><br>
+        <input type="text" id="psName3">
+        <input type="text" id="psScore3">
+        <input type="text" id="psName4">
+        <input type="text" id="psScore4">
+        <label for="psName5">Match 3</label><br>
+        <input type="text" id="psName5">
+        <input type="text" id="psScore5">
+        <input type="text" id="psName6">
+        <input type="text" id="psScore6">
+        <label for="psName7">Match 4</label><br>
+        <input type="text" id="psName7">
+        <input type="text" id="psScore7">
+        <input type="text" id="psName8">
+        <input type="text" id="psScore8">
+    </div>
+    </div>
     <script src="swiss.js">
     </script>
 </body>

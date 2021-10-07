@@ -2,8 +2,7 @@
     display: grid;
     grid-template-columns: 120px 25px;
     grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    
+    grid-row-gap: 5px;   
 }
 #playerEntry {
     text-align: center; 
