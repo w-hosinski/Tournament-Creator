@@ -1,13 +1,13 @@
 #container {    
-    font-size: 25px;
-    margin: 10% 0 0 36%;
+    font-size: 20px;
+    margin: 3% 0 0 39%;
     padding: 1em;
     background: lightgray;
-    width: 22.5%
+    width: 18%
 }
 .scoreDisplay {
     display: grid;
-    grid-template-columns: 120px 25px 25px;
+    grid-template-columns: 7em 1.6em 1.25em;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 }
@@ -15,11 +15,13 @@
     display: none;
 }
 #swissEntry {
-    width: 115px;
+    width: 10em;
+    height: 1.5em;
     margin-bottom: 20px;
 }
 #submitName {
-    width: 55px;
+    width: 7em;
+    height: 1.7em;
 }
 .deleteButton {
     text-indent: -2px;
@@ -27,13 +29,17 @@
 
 #swissPairings {
     display: grid;
-    grid-template-columns: 120px 25px;
+    grid-template-columns: 7em 1.6em;
     grid-column-gap: 5px;
     grid-row-gap: 5px;   
 }
 #createPairingsButton {
     display: none
 }
-
-
+input[type=text] {
+    font-size: 1em;
+}
+input[type=button] {
+    font-size: 1em;
+}
 

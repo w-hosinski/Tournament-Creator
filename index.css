@@ -1,10 +1,20 @@
 .genbracket {
     display: grid;
-    grid-template-columns: 120px 25px;
+    grid-template-columns: 7em 1.25em;
     grid-column-gap: 5px;
     grid-row-gap: 5px;   
 }
 #playerEntry {
     text-align: center; 
+}
+#container {    
+    font-size: 20px;
+    margin: 2.5% 0 0 42%;
+    padding: 1em;
+    background: lightgray;
+    width: 8.5%
+}
+input[type=text] {
+    font-size: 0.8em;
 }
 

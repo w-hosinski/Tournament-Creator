@@ -8,57 +8,58 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="container">
     <br> <a href="swiss.html">Swiss Tournament</a></p>
     <div class="genbracket">
 
 <label for="p1name">Quarterfinals 1</label><br>
 <input type="text" placeholder="Player 1" class="Round 1" id="p1name">
-<input type="text" placeholder="sc1" class="round1r" id="p1score">
+<input type="text"  class="round1r" id="p1score">
 <input type="text" placeholder="Player 2" class="Round 1" id="p2name">
-<input type="text" placeholder="sc2" class="round1r" id="p2score">
+<input type="text"  class="round1r" id="p2score">
 <label for="p3name">Quarterfinals 2</label><br>
 <input type="text" placeholder="Player 3" class="Round 1" id="p3name">
-<input type="text" placeholder="sc3" class="round1r" id="p3score">
+<input type="text"  class="round1r" id="p3score">
 <input type="text" placeholder="Player 4" class="Round 1" id="p4name">
-<input type="text" placeholder="sc4" class="round1r" id="p4score">
+<input type="text"  class="round1r" id="p4score">
 <label for="p5name">Quarterfinals 3</label><br>
 <input type="text" placeholder="Player 5" class="Round 1" id="p5name">
-<input type="text" placeholder="sc5" class="round1r" id="p5score">
+<input type="text"  class="round1r" id="p5score">
 <input type="text" placeholder="Player 6" class="Round 1" id="p6name">
-<input type="text" placeholder="sc6" class="round1r" id="p6score">
+<input type="text"  class="round1r" id="p6score">
 <label for="p5name">Quarterfinals 4</label><br>
 <input type="text" placeholder="Player 7" class="Round 1" id="p7name">
-<input type="text" placeholder="sc7" class="round1r" id="p7score">
+<input type="text" class="round1r" id="p7score">
 <input type="text" placeholder="Player 8" class="Round 1" id="p8name">
-<input type="text" placeholder="sc8" class="round1r" id="p8score">
+<input type="text" class="round1r" id="p8score">
 
 <label for="w12name">Semifinals 1</label><br>
 <input type="text" placeholder="Winner 1-2" class="Round 2" id="w12name" readonly>
-<input type="text" placeholder="sc1-2" class="round2r" id="w12score">
+<input type="text" class="round2r" id="w12score">
 <input type="text" placeholder="Winner 3-4" class="Round 2" id="w34name" readonly>
-<input type="text" placeholder="sc3-4" class="round2r" id="w34score">
+<input type="text" class="round2r" id="w34score">
 <label for="w56name">Semifinals 2</label><br>
 <input type="text" placeholder="Winner 5-6" class="Round 2" id="w56name" readonly>
-<input type="text" placeholder="sc5-6" class="round2r" id="w56score">
+<input type="text" class="round2r" id="w56score">
 <input type="text" placeholder="Winner 7-8" class="Round 2" id="w78name" readonly>
-<input type="text" placeholder="sc7-8" class="round2r" id="w78score">
+<input type="text" class="round2r" id="w78score">
 
 <label for="w1234name">Finals</label><br>
 <input type="text" placeholder="Winner 1-2 | 3-4" class="Round 3" id="w1234name" readonly>
-<input type="text" placeholder="sc1-2 | 3-4" class="round3r" id="w1234score">
+<input type="text" class="round3r" id="w1234score">
 <input type="text" placeholder="Winner 5-6 | 7-8" class="Round 3" id="w5678name" readonly>
-<input type="text" placeholder="sc5-6 | 7-8" class="round3r" id="w5678score">
+<input type="text" class="round3r" id="w5678score">
 
 <input type="text" placeholder="1st Place" class="Round 4"  id="firstplace" readonly>
     </div>
-    <h2>
+    <h3>
     Player Lookup:
-</h2>
+</h3>
 <input type="text" placeholder="Enter Player Name" id="playerEntry">
 
-<br> Last round the player particpated in:
-<br> <input type="text" id="lastround">
-
+<br> Last Round was:
+<br> <input type="text" id="lastround" readonly>
+</div>
 
 
 <script src="index.js">
