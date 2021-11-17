@@ -31,18 +31,21 @@ let player7round
 let player8name
 let player8round
 let roundArray = []
+let winnerColor = "lime"
+let loserColor = "lightgrey"
+let firstPlaceColor = "gold"
 
 function scorem1(){
 if(p1score.value!=="" && p2score.value!=="") {
     if(p1score.value>p2score.value){
         w12name.value = p1name.value
-        p1name.style.backgroundColor = "lime"
-        p2name.style.backgroundColor = "lightgrey"
+        p1name.style.backgroundColor = winnerColor
+        p2name.style.backgroundColor = loserColor
     }
     else if(p2score.value>p1score.value){
         w12name.value = p2name.value
-        p2name.style.backgroundColor = "lime"
-        p1name.style.backgroundColor = "lightgrey"
+        p2name.style.backgroundColor = winnerColor
+        p1name.style.backgroundColor = loserColor
     }
 }
 }
@@ -50,13 +53,13 @@ function scorem2(){
 if(p3score.value!=="" && p4score.value!=="") {
     if(p3score.value>p4score.value){
         w34name.value = p3name.value
-        p3name.style.backgroundColor = "lime"
-        p4name.style.backgroundColor = "lightgrey"
+        p3name.style.backgroundColor = winnerColor
+        p4name.style.backgroundColor = loserColor
         }
     else if(p4score.value>p3score.value){
         w34name.value = p4name.value
-        p4name.style.backgroundColor = "lime"
-        p3name.style.backgroundColor = "lightgrey"
+        p4name.style.backgroundColor = winnerColor
+        p3name.style.backgroundColor = loserColor
         }
     }
     }
@@ -64,13 +67,13 @@ function scorem3(){
 if(p5score.value!=="" && p6score.value!=="") {
     if(p5score.value>p6score.value){
         w56name.value = p5name.value
-        p5name.style.backgroundColor = "lime"
-        p6name.style.backgroundColor = "lightgrey"
+        p5name.style.backgroundColor = winnerColor
+        p6name.style.backgroundColor = loserColor
             }
     else if(p6score.value>p5score.value){
         w56name.value = p6name.value
-        p6name.style.backgroundColor = "lime"
-        p5name.style.backgroundColor = "lightgrey"
+        p6name.style.backgroundColor = winnerColor
+        p5name.style.backgroundColor = loserColor
             }
         }
         }
@@ -78,13 +81,13 @@ function scorem4(){
 if(p7score.value!=="" && p8score.value!=="") {
     if(p7score.value>p8score.value){
         w78name.value = p7name.value
-        p7name.style.backgroundColor = "lime"
-        p8name.style.backgroundColor = "lightgrey"
+        p7name.style.backgroundColor = winnerColor
+        p8name.style.backgroundColor = loserColor
                 }
     else if(p8score.value>p7score.value){
         w78name.value = p8name.value
-        p8name.style.backgroundColor = "lime"
-        p7name.style.backgroundColor = "lightgrey"
+        p8name.style.backgroundColor = winnerColor
+        p7name.style.backgroundColor = loserColor
                 }
             }
             }
@@ -92,13 +95,13 @@ function scorem5(){
 if(w12score.value!=="" && w34score.value!=="") {
     if(w12score.value>w34score.value){
         w1234name.value = w12name.value
-        w12name.style.backgroundColor = "lime"
-        w34name.style.backgroundColor = "lightgrey"
+        w12name.style.backgroundColor = winnerColor
+        w34name.style.backgroundColor = loserColor
                     }
     else if(w34score.value>w12score.value){
         w1234name.value = w34name.value
-        w34name.style.backgroundColor = "lime"
-        w12name.style.backgroundColor = "lightgrey"
+        w34name.style.backgroundColor = winnerColor
+        w12name.style.backgroundColor = loserColor
                     }
                 }
                 }
@@ -106,13 +109,13 @@ function scorem6(){
 if(w56score.value!=="" && w78score.value!=="") {
     if(w56score.value>w78score.value){
         w5678name.value = w56name.value
-        w56name.style.backgroundColor = "lime"
-        w78name.style.backgroundColor = "lightgrey"
+        w56name.style.backgroundColor = winnerColor
+        w78name.style.backgroundColor = loserColor
                         }
     else if(w78score.value>w56score.value){
         w5678name.value = w78name.value
-        w78name.style.backgroundColor = "lime"
-        w56name.style.backgroundColor = "lightgrey"
+        w78name.style.backgroundColor = winnerColor
+        w56name.style.backgroundColor = loserColor
                         }
                     }
                     }
@@ -120,16 +123,16 @@ function scorem7(){
 if(w1234score.value!=="" && w5678score.value!=="") {
     if(w1234score.value>w5678score.value){
         firstplace.value = w1234name.value
-        w1234name.style.backgroundColor = "lime"
-        w5678name.style.backgroundColor = "lightgrey"
+        w1234name.style.backgroundColor = winnerColor
+        w5678name.style.backgroundColor = loserColor
         
                                                 }
     else if(w5678score.value>w1234score.value){
         firstplace.value = w5678name.value
-        w5678name.style.backgroundColor = "lime"
-        w1234name.style.backgroundColor = "lightgrey"
+        w5678name.style.backgroundColor = winnerColor
+        w1234name.style.backgroundColor = loserColor
                                                 }
-        firstplace.style.backgroundColor = "gold"
+        firstplace.style.backgroundColor = firstPlaceColor
                                             }
                                             }
 
@@ -154,11 +157,11 @@ function arrayConstruction(){
     //let temp = roundArray[0][0]
     for (let i = 0; i < 15; i++) {
         if(roundArray[i][0] == playerEntry.value){
-        lastround.value = roundArray[i][1]
+        lastRound.value = roundArray[i][1]
         break
         }
             else {
-            lastround.value = "Not Found"
+            lastRound.value = "Not Found"
             }
     }
 }

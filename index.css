@@ -6,13 +6,17 @@
 }
 #playerEntry {
     text-align: center; 
+    width:10em;
 }
 #container {    
     font-size: 20px;
-    margin: 2.5% 0 0 42%;
+    margin: 5rem 0 0 42%;
     padding: 1em;
     background: lightgray;
-    width: 8.5%
+    width: 10rem
+}
+#lastRound {
+    width:10em
 }
 input[type=text] {
     font-size: 0.8em;
